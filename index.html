@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/reveal.css" />
+		<link rel="stylesheet" href="css/theme/night.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement('link')
+			link.rel = 'stylesheet'
+			link.type = 'text/css'
+			link.href = window.location.search.match(/print-pdf/gi)
+				? 'css/print/pdf.css'
+				: 'css/print/paper.css'
+			document.getElementsByTagName('head')[0].appendChild(link)
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>
+						Introduction to ReactJS
+					</h3>
+					<br />
+					<small>
+						By
+						<a href="https://twitter.com/itssurajnegi"
+							>@surajnegi</a
+						>
+					</small>
+				</section>
+				<section>
+					<h2>What's Inside</h2>
+					<ul>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								A little History about the Web FrontEnd
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Why React?
+							</p>
+						</li>
+
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Getting Started with react
+							</p>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						Here are the topics which i will cover in this
+						presentation, First I will talk about the history of the
+						frontend web, some before and after stuff and what all
+						things have chaged for frontend developers and some
+						problems of today's web. Then I will Talk about what
+						react is and how it is solving those problems. Next I
+						will Talk about how to get started with reactjs So,
+						let's start.
+					</aside>
+				</section>
+
+				<section>
+					<h2>
+						History
+					</h2>
+				</section>
+
+				<section>
+					<h6>
+						Facebook UI 2006
+					</h6>
+					<img class="stretch" data-src="./images/fb-2006.jpg" />
+					<aside class="notes">
+						so this is the frontend for the Facebook webapplication
+						at 2006. So can any one tell me what's missing here. yes
+						its Dynamic content.
+					</aside>
+				</section>
+
+				<section>
+					<h6>
+						Facebook UI 2014
+					</h6>
+					<img class="stretch" data-src="./images/fb-2014.png" />
+					<aside class="notes">
+						and this there application in 2014
+					</aside>
+				</section>
+
+				<section>
+					<h6>
+						Facebook UI 2019
+					</h6>
+					<img class="stretch" data-src="./images/fb-2019-2.jpg" />
+
+					<aside class="notes">
+						and recently Facebook launched there new plans for the
+						application besides the changes in UI there is a lot of
+						Dynamic content data and also Users.
+					</aside>
+				</section>
+
+				<section>
+					<h6>
+						Facebook UI 2019
+					</h6>
+					<img class="stretch" data-src="./images/fb-2019.png" />
+				</section>
+
+				<section>
+					<h6>
+						What users had Before
+					</h6>
+
+					<ul>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Slow networks
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Less interaction on the pages
+							</p>
+						</li>
+
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Slow Browsers Engines
+							</p>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h6>
+						What users has now
+					</h6>
+
+					<ul>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Fast networks (Sometimes)*
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								More Processing speeds
+							</p>
+						</li>
+
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Fast Browsers Engines (V8, WebKit)
+							</p>
+						</li>
+
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								JavaScript turned web browsers into application
+								platforms
+							</p>
+						</li>
+					</ul>
+					<p class="fragment">
+						*not including BSNL
+					</p>
+				</section>
+
+				<section>
+					<h6>
+						Challenges for developers
+					</h6>
+					<ul>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Making Web application is getting more complex
+								with just vanilla js
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Keeping the UI in sync with the state is hard
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Network speeds have increased so as the page
+								size Average* web page size will be 4 MB by 2019
+							</p>
+						</li>
+
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Web sites are turning into Application
+							</p>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is React ?</h2>
+					<h4 class="fragment fade-in-then-semi-out">
+						A JavaScript library for building user interfaces
+					</h4>
+				</section>
+
+				<section>
+					<h2>
+						Why React ?
+					</h2>
+					<ul>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Blazingly fast in small package
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Components Based
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Easy to get started
+							</p>
+						</li>
+						<li>
+							<p class="fragment fade-in-then-semi-out">
+								Huge community and Facebook backed
+							</p>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>
+						React features
+					</h2>
+				</section>
+
+				<section>
+					<h3>
+						Components
+					</h3>
+					<p>
+						Components let you split the UI into independent,
+						reusable pieces, and think about each piece in
+						isolation.
+					</p>
+
+					<pre><code data-trim noescape data-line-numbers>
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+</code></pre>
+				</section>
+				<section>
+					<h3>
+						Virtual Dom
+					</h3>
+					<p>
+						In React, for every DOM object, there is a corresponding
+						"virtual DOM object." A virtual DOM object is a
+						representation of a DOM object, it creates a virtual
+						copy of the original DOM. It's a one-way data binding
+						hence manipulating the virtual DOM is quick rather than
+						updating original DOM because nothing gets drawn
+						onscreen.
+					</p>
+				</section>
+				<section>
+					<h3>
+						JSX
+					</h3>
+					<p>
+						Combination of Javascript + XML Just like HTML.
+					</p>
+					<pre><code data-trim noescape data-line-numbers>
+function Navbar(props) {
+	// This function returns jsx
+  return <h1>Hello, I am navbar</h1>;
+}
+</code></pre>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			})
+		</script>
+	</body>
+</html>
